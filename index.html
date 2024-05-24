@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Feed con Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light m-0 p-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <button type="button" class="btn btn-success m-1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Create a new post</button>
+                    <li class="nav-item dropdown btn btn-secondary m-1">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-gear"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- botones para el grid y feed -->
+    <div class="container my-4">
+        <div class="d-flex justify-content-center">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a href="grilla.html" id="gridView" class="btn"><i class="fas fa-th"></i></a>
+                <a href="index.html" id="lineView" class="btn"><i class="fas fa-bars"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aquí se insertan las fotos para el grid-->
+    <div id="gallery" class="w-100">
+        <div class="card col-12 col-md-4 mb-3 cards mx-auto">
+            <div class="card-header">
+                <p><b>Pikachu</b></p>
+            </div>
+            <div>
+                <img src="https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2024/01/pokemon-pikachu-no-evoluciono.jpg"
+                    class="img-fluid" alt="">
+            </div>
+            <div class="container my-4">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-heart fa-lg"></i></button>
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-comment fa-lg"></i></button>
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-paper-plane fa-lg"></i></button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-bookmark fa-lg"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <h6 class="card-title">Le gusta a <b>Bolbusour, Raichu </b>and <b> others</b></h6>
+                <p class="card-text"> <b>Pikachu </b> En el corazón del Bosque Verde, un Pikachu solitario anhelaba
+                    encontrar un
+                    entrenador con quien compartir aventuras.</p>
+            </div>
+        </div>
+
+        <div class="card col-12 col-md-4 mb-3 cards mx-auto">
+            <div class="card-header">
+                <p><b>Charmander</b></p>
+            </div>
+            <div>
+                <img src="https://www.cheatcc.com/wp-content/uploads/2023/09/Charmander-close-up.jpg" class="img-fluid"
+                    alt="">
+            </div>
+            <div class="container my-4">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-heart fa-lg"></i></button>
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-comment fa-lg"></i></button>
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-paper-plane fa-lg"></i></button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-bookmark fa-lg"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <h6 class="card-title">Le gusta a <b>Bolbusour, Raichu </b>and <b> others</b></h6>
+                <p class="card-text"> <b>Charmander </b> Abandonado por su antiguo entrenador, Charmander fue
+                    encontrado por Ash
+                    bajo la
+                    lluvia, su llama casi apagada. </p>
+            </div>
+        </div>
+
+        <div class="card col-12 col-md-4 mb-3 cards mx-auto">
+            <div class="card-header">
+                <p><b>Bulbasaur</b></p>
+            </div>
+            <div>
+                <img src="https://img.asmedia.epimg.net/resizer/v2/BNQ3SCY4EZAEZE3ECRYAEM5FMQ.jpg?auth=5f3ab9698c8cb3a29e46474d5cf4b7cf3cf2571e9af971a6f58d73ff6c4d35aa&width=1472&height=828&smart=true"
+                    class="img-fluid" alt="">
+            </div>
+            <div class="container my-4">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-heart fa-lg"></i></button>
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-comment fa-lg"></i></button>
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-paper-plane fa-lg"></i></button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-bookmark fa-lg"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <h6 class="card-title">Le gusta a <b>Bolbusour, Raichu </b>and <b> others</b></h6>
+                <p class="card-text"> <b>Bulbasaur </b> En una verde pradera, Bulbasaur protegía a otros Pokémon de
+                    los
+                    ataques de
+                    villanos.</p>
+            </div>
+        </div>
+
+        <div class="card col-12 col-md-4 mb-3 cards mx-auto">
+            <div class="card-header">
+                <p><b>Squirtle </b></p>
+            </div>
+            <div>
+                <img src="https://www.mundodeportivo.com/alfabeta/hero/2024/04/pokemon-squirtle-1.jpg?width=768&aspect_ratio=16:9&format=nowebp"
+                    class="img-fluid" alt="">
+            </div>
+            <div class="container my-4">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-heart fa-lg"></i></button>
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-comment fa-lg"></i></button>
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-paper-plane fa-lg"></i></button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-bookmark fa-lg"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <h6 class="card-title">Le gusta a <b>Bolbusour, Raichu </b>and <b> others</b></h6>
+                <p class="card-text"> <b>Squirtle </b> En una verde pradera, Bulbasaur protegía a otros Pokémon de
+                    los
+                    ataques de
+                    villanos.</p>
+            </div>
+        </div>
+
+        <div class="card col-12 col-md-4 mb-3 cards mx-auto">
+            <div class="card-header">
+                <p><b>Squirtle </b></p>
+            </div>
+            <div>
+                <img src="https://nintenduo.com/wp-content/uploads/2023/02/Hora-Pokemon-GO-Destacado-Jigglypuff-Shiny-00-1200x900.webp"
+                    class="img-fluid" alt="">
+            </div>
+            <div class="container my-4">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-heart fa-lg"></i></button>
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-comment fa-lg"></i></button>
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-paper-plane fa-lg"></i></button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-bookmark fa-lg"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <h6 class="card-title">Le gusta a <b>Bolbusour, Raichu </b>and <b> others</b></h6>
+                <p class="card-text"> <b>Squirtle </b> En una verde pradera, Bulbasaur protegía a otros Pokémon de
+                    los
+                    ataques de
+                    villanos.</p>
+            </div>
+        </div>
+
+        <div class="card col-12 col-md-4 mb-3 cards mx-auto">
+            <div class="card-header">
+                <p><b>Syduck </b></p>
+            </div>
+            <div>
+                <img src="https://images.wikidexcdn.net/mwuploads/wikidex/b/b2/latest/20230325202418/EP1234_Psyduck_de_Misty.png"
+                    class="img-fluid" alt="">
+            </div>
+            <div class="container my-4">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-heart fa-lg"></i></button>
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-comment fa-lg"></i></button>
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-paper-plane fa-lg"></i></button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-link text-dark p-0"><i class="far fa-bookmark fa-lg"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <h6 class="card-title">Le gusta a <b>Bolbusour, Raichu </b>and <b> others</b></h6>
+                <p class="card-text"> <b>Squirtle </b> En una verde pradera, Bulbasaur protegía a otros Pokémon de
+                    los
+                    ataques de
+                    villanos.</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Modal (mensaje alerta)-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="box-msg">
+                    <p><b>Caption: </b></p>
+                    <textarea class="modal-body" id="" rows="2"
+                        placeholder="Add de caption to your post here"></textarea>
+                </div>
+
+                <div class="load">
+                    <button type="button" class="btn btn-light"><i class="bi bi-camera-fill"></i></button>
+                    <button type="button" class="btn btn-light"><i class="bi bi-geo-alt-fill"></i></button>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
